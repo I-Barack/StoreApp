@@ -1,7 +1,7 @@
 const Stock = require('../modules/stockmodel')
 const mongoose = require('mongoose')
 
-// Get all stock
+// Get all stocks
 const getStock = async (req, res) => {
     const stock = await Stock.find({}).sort({createsAt: -1})
 
